@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Платформер на JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="score">Очки: <span id="score">0</span></div>
+            <div class="health">Здоровье: <span id="health">100</span></div>
+            <div class="level">Уровень: <span id="level">1</span></div>
+        </div>
+        
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        
+        <div class="game-controls">
+            <button id="startBtn">Старт</button>
+            <button id="pauseBtn" disabled>Пауза</button>
+            <button id="restartBtn">Рестарт</button>
+        </div>
+        
+        <div class="instructions">
+            <p>Управление: стрелочки</p>
+            <p>Соберите все монеты для перехода на следующий уровень</p>
+        </div>
+    </div>
+
+    <script src="js/InputHandler.js"></script>
+    <script src="js/Platform.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/Collision.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
